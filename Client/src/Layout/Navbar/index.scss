@@ -1,0 +1,35 @@
+.Navbar{
+    padding: 20px  60px;
+   .MainNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    .NavText{
+
+    }
+
+    .NavIn{
+        .NavbarUl{
+            font-size: 20px;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                &:hover{
+                    color: orange;
+                    transition: 0.4s;
+                }
+            }
+            li a{
+                color: black;
+                &:hover{
+                    color: orange;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+   } 
+}

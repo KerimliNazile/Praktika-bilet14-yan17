@@ -1,0 +1,51 @@
+#LeaderShip {
+    min-height: 80vh;
+
+    .LeaderShipArea {
+        .LeaderText {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        .BoxArea {
+            flex-wrap: wrap;
+            margin: auto;
+            // width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Box {
+                
+                    
+                    img {
+
+                        width: 40%;
+                        // max-width: 100%;
+
+                    
+                }
+
+                h5 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .BoxIcon {
+                    font-size: 22px;
+                    gap: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

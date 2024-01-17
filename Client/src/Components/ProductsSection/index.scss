@@ -1,0 +1,45 @@
+#Products{
+    .ProductsArea{
+        .ProductTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 50px;
+            }
+        }
+        .ProductCard{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .Card{
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    #Products{
+        .ProductsArea{
+            .ProductCard{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                .Card{
+    
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    #Products{
+        .ProductsArea{
+            .ProductCard{
+                display: grid;
+                grid-template-columns: 1fr  ;
+                .Card{
+    
+                }
+            }
+        }
+    }
+}
