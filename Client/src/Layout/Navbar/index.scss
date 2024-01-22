@@ -1,35 +1,204 @@
-.Navbar{
-    padding: 20px  60px;
-   .MainNav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-    .NavText{
+.Navbar {
+    background-color: blue;
+    height: 80px;
 
-    }
+    .MainNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    .NavIn{
-        .NavbarUl{
-            font-size: 20px;
-            gap: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            li{
-                &:hover{
-                    color: orange;
-                    transition: 0.4s;
+        .NavText {}
+
+        .NavIn {
+            .NavbarUl {
+                font-size: 20px;
+                gap: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    &:hover {
+                        color: orange;
+                        transition: 0.4s;
+                    }
                 }
-            }
-            li a{
-                color: black;
-                &:hover{
-                    color: orange;
-                    transition: 0.4s;
+
+                li a {
+                    color: black;
+
+                    &:hover {
+                        color: orange;
+                        transition: 0.4s;
+                    }
                 }
             }
         }
+
+
     }
-   } 
+}
+
+#mobile {
+    display: none;
+}
+
+.navList {
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 82px;
+    height: 50vh;
+    width: 300px;
+    background-color: cadetblue;
+    padding: 40px 0 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navList li {
+    margin-bottom: 25px;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        color: rgb(61, 61, 238);
+
+    }
+}
+
+.navList_close {
+    right: -300px;
+
+}
+
+
+.navList_active {
+    right: 0px;
+}
+
+
+.icon {
+    font-size: 30px;
+    color: #fff;
+}
+
+@media screen and (max-width:800px) {
+    .Navbar {
+        background-color: blue;
+        height: 80px;
+
+        .MainNav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .NavText {}
+
+            .NavIn {
+                .NavbarUl {
+                   
+
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 90px;
+                    right: -300px;
+                    // height: 100vh;
+                    // width: 300px;
+                    background-color: cadetblue;
+                    padding: 40px 0 0 20px;
+                    transition: 0.3s ease-in-out;
+                    font-size: 20px;
+                    gap: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        &:hover {
+                            color: orange;
+                            transition: 0.4s;
+                        }
+                    }
+
+                    li a {
+                        color: black;
+
+                        &:hover {
+                            color: orange;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .navList {
+        display: flex;
+        // display: none;
+        // justify-content: flex-start;
+        // align-items: flex-start;
+        // flex-direction: column;
+        // position: fixed;
+        // top: 82px;
+        // height: 50vh;
+        // width: 300px;
+        // background-color: cadetblue;
+        // padding: 40px 0 0 20px;
+        // transition: 0.3s ease-in-out;
+    }
+
+    .navList li {
+        margin-bottom: 25px;
+        list-style: none;
+        padding: 0px 20px;
+    }
+
+    .navList li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            color: rgb(61, 61, 238);
+
+        }
+    }
+
+    .navList_close {
+        display: none;
+        right: -300px;
+
+    }
+
+
+    .navList_active {
+        right: 0px;
+    }
+
+
+    .icon {
+        font-size: 30px;
+        color: #fff;
+    }
 }

@@ -1,49 +1,45 @@
-#LeaderShip {
+#Leader {
     min-height: 80vh;
 
-    .LeaderShipArea {
-        .LeaderText {
+    .LeaderArea {
+        .LeaderTitle {
             display: flex;
             align-items: center;
             justify-content: center;
 
             h1 {
-                font-size: 40px;
+                font-size: 50px;
             }
         }
 
-        .BoxArea {
+        .LeaderBox {
+
+            margin-top: 50px;
             flex-wrap: wrap;
-            margin: auto;
-            // width: 80%;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 20px;
 
-            .Box {
-                
-                    
+            .BoxIn {
+                align-items: center;
+                text-align: center;
+                border: 1px solid black;
+                max-height: 400px;
+                max-width: 400px;
+
+                .LeaderImg {
+
+                    width: 300px;
+                    height: 300px;
                     img {
-
-                        width: 40%;
-                        // max-width: 100%;
-
-                    
+                       width: 100%;
+                        height: 300px;
+                    }
                 }
 
-                h5 {
-                    font-size: 20px;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-                .BoxIcon {
-                    font-size: 22px;
-                    gap: 20px;
-                    display: flex;
-                    align-items: center;
+                .LeaderText {
+                    width: 380px;
                 }
             }
         }

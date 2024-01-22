@@ -5,14 +5,18 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import WishlistProvider from './context/WishlistContext.jsx'
+import BasketProvider from './context/BasketContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
-      <WishlistProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </WishlistProvider>
+      <BasketProvider>
+        <WishlistProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </WishlistProvider>
+      </BasketProvider>
+
 
     </HelmetProvider>
 

@@ -5,8 +5,10 @@ import { BsSuitHeartFill } from "react-icons/bs";
 import './index.scss'
 import { WishlistContext } from '../../context/WishlistContext';
 import { Link } from 'react-router-dom';
+import { BasketContext } from '../../context/BasketContext';
 const Card = ({ image, title, text, star, heart, product, id }) => {
     const { addWish } = useContext(WishlistContext)
+    const { addBasket } = useContext(BasketContext)
     return (
         <>
             <div className="CardArea">
@@ -24,7 +26,7 @@ const Card = ({ image, title, text, star, heart, product, id }) => {
                     </div>
                     <div className="Add">
                         <div className="AddCard">
-                            <div><button>CART</button></div>
+                            <div><button onClick={() => addBasket(product)}>CART</button></div>
                         </div>
                         <div className="AddView">
                             <div><Link to={`/${id}`}><button>VIEW</button></Link></div>
